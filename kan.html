@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+       h1{text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;bottom: 45px;
+        }
+       label{font-size: larger;
+    margin-bottom: 15%;}
+       body{
+            padding: 180px;
+            background-image: url('bg3.jpg');
+            background-size: cover;
+            
+    }
+        input{
+            padding-left: 20px;
+            height: 25px;
+        }
+        form{
+            width: 380px;
+            margin: auto;
+            padding: 50px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 40px;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+
+        }
+        .hi{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: x-large;
+            font-family: cursive;
+
+        }
+        .hi:hover{
+            text-decoration: underline;
+            color: black;
+           cursor: pointer;
+        }
+        marquee{
+            font-size: x-large;
+            color: rgb(255, 255, 255);
+        }
+       img{
+        position: relative;top: 20px;
+
+       }
+       
+
+    </style>
+  
+    <title>
+        loginform
+    </title>
+<body>
+        <marquee direction="right"  behavior="alternate">WELCOME TO OUR PAGE THANKS FOR VISITING HERE </marquee>
+       
+        <p class="hi"> KANAVIN_THEDAL_OFFICIAL </p></BR>
+        <BR>
+        <form name="ff">
+            <img  src="bg4.jpg" width="50px" height="50px" style="border-radius: 15px; padding :left ;">
+            <h1>Follower login</h1>
+
+            <label for="username" >username</label>
+            <br>
+            <br>
+            <input type="text"  name="user" required placeholder="Ex.@rakesh" id="myinput1" size="25" minlength="8"></input></br>
+            <br>
+            <label for="pass">password</label>
+            <br>
+            <br>
+             <input type="password" name="password" required placeholder="enter valid password" id="myinput" size="25" ></input></br>
+            <br>
+            <input type="submit" onclick="insta()" value="submit" style="cursor: pointer;" id="ta"></br>
+            
+           <p><a href="https://www.google.co.in/" >Forgot password ?</a></p>
+          
+        </form>
+        <script>
+            function insta()
+            {
+                var x=document.getElementById("myinput").value;
+                
+                if(x.length()!=0)
+                {
+                document.getElementById("ta").onclick=function(){
+                    location.href="newtab.html"
+                }
+                }
+            }
+        </script>
+    </body>
+</head>
+</html>
